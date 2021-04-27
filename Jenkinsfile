@@ -29,6 +29,7 @@ node {
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. 
          * docker-hub-credentials is a variable in Jenkins Credential Manger containing my Docker Hub login credentials
+         * 
          */
          
         docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
